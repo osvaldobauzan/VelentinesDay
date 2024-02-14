@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector Aleatorio de Participantes</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Selector Aleatorio de Participantes</h1>
+        <label for="participant-input">Ingrese un participante:</label>
+        <input type="text" id="participant-input" placeholder="Nombre del participante">
+        <button onclick="addParticipant()">Agregar</button>
+        <button onclick="selectNext()">Siguiente</button>
+        <button onclick="resetSelection()">Reiniciar</button>
+        <p id="selected-participant"></p>
+        <script src="{{ url_for('static', filename='script.js') }}"></script>
+    </div>
+</body>
+</html>
